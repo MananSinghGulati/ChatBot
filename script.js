@@ -1,5 +1,5 @@
 function talk(){
-  let answers = {
+  const answers = {
     "hi" : "Hello!",
     "hello" : "Hello!",
     "hey" :"Hello",
@@ -14,15 +14,28 @@ function talk(){
     "ty" : "😊"
 };
 
-const userInput = document.getElementById('userBox').value;
-const sanitizedUserInput = userInput.trim().toLowerCase().replace("-", "").replace("?", "")  //remove spaces from start and end of input, make it lowercased, and replace - with empty strings. making strings like "e-waste" into "ewaste".
 
-document.getElementById('chatLog').innerHTML = userInput + "<br>";
+  const userInput = document.getElementById('userBox').value;
+  const sanitizedUserInput = userInput.trim().toLowerCase().replace("-", "").replace("?", "")  //remove spaces from start and end of input, make it lowercased, and replace - with empty strings. making strings like "e-waste" into "ewaste".
 
-if(sanitizedUserInput in answers){
-  document.getElementById('chatLog').innerHTML = answers[sanitizedUserInput] + "<br>";
-}
-else{
+  // document.getElementById('chatLog').innerHTML = userInput + "<br>";
+
+  for(const answersKey in answers){
+    if(sanitizedUserInput.includes(answersKey)){
+      document.getElementById('chatLog').innerHTML = answers[answersKey] + "<br>";
+      break;
+    }
+    else{
   document.getElementById('chatLog').innerHTML = "Sorry, I couldn't quite get that. Could you please ask another question? <br>";
 }
+  }
 }
+
+
+// if(sanitizedUserInput in answers){
+//   document.getElementById('chatLog').innerHTML = answers[sanitizedUserInput] + "<br>";
+// }
+// else{
+//   document.getElementById('chatLog').innerHTML = "Sorry, I couldn't quite get that. Could you please ask another question? <br>";
+// }
+// }

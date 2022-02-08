@@ -52,11 +52,11 @@ body{
   }
   .mid .chat p{
     margin: 0;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: #fff;
     background: 	#5086c6;
-    padding: 50px 10px;
+    padding: 30px 10px;
     letter-spacing: 0.04em;
   }
   .input{

@@ -2,7 +2,11 @@
   let know = {
     "Hi" : "Hello!",
 
+    "Hey" : "Hello!",
+
     "Hello" : "Hello!",
+
+    "How are you?" : "I am doing great!",
 
     "What is e-waste?" : "Electronic waste or E-waste describes discarded electrical or electronic devices. Used electronics which are destined for refurbishment, reuse, resale, salvage recycling through material recovery, or disposal are also considered E-waste. ",
     

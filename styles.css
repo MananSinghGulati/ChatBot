@@ -37,7 +37,7 @@ body{
     font-size: 30px;
     text-align: center;
     /* padding-left: 20px; */
-    padding-top: 10px;
+    padding-top: 20px;
     font-family: monospace;
   }
   .mid{
@@ -51,7 +51,7 @@ body{
   }
   .mid .chat h2{
     margin: 0;
-    font-size: 30px;
+    font-size: 20px;
     color: #ffffff;
     font-family: monospace;
     padding: 30px 10px;
@@ -59,10 +59,10 @@ body{
   .mid .chat p{
     margin: 0;
     height: 73px;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 600;
     color: #fff;
-    padding: 30px 10px;
+    padding: 5px 10px;
     -webkit-text-stroke: 0.1px black;
     letter-spacing: 0.04em;
     font-family: monospace;
@@ -81,7 +81,7 @@ body{
     font-size: 30px;
     outline: none;
     border: none;
-    padding-left: 40px;
+    padding-left: 20px;
     padding-bottom: 0px;
     font-family: monospace;
     background: #444444;

@@ -34,6 +34,12 @@
 
     "What should we do with e-waste?" : "Reduce, reuse, and recycle ♻️ . Reduce your generation of e-waste through smart procurement and good maintenance. Its all for a good cause.",
 
+    "What should we do with ewaste?" : "Reduce, reuse, and recycle ♻️ . Reduce your generation of e-waste through smart procurement and good maintenance. Its all for a good cause.",
+
+    "What should we do with e-waste" : "Reduce, reuse, and recycle ♻️ . Reduce your generation of e-waste through smart procurement and good maintenance. Its all for a good cause.",
+    
+    "What should we do with ewaste" : "Reduce, reuse, and recycle ♻️ . Reduce your generation of e-waste through smart procurement and good maintenance. Its all for a good cause.",
+
     "Bye" : "Bye! I hope you enjoyed the conversation! 👋",  
 
 
@@ -50,8 +56,9 @@
 
   let user = document.getElementById('userBox').value;
     document.getElementById('chatLog').innerHTML = user + "<br>";
-  if (user in newObj) {
-    document.getElementById('chatLog').innerHTML = newObj[user] + "<br>";
+    let newUser = user.toLowerCase()
+  if (newUser in newObj) {
+    document.getElementById('chatLog').innerHTML = newObj[newUser] + "<br>";
   }else{
     document.getElementById('chatLog').innerHTML = "Sorry, I couldn't quite get that. Could you please ask another question? <br>";
   }

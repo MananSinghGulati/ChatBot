@@ -59,10 +59,11 @@ body{
   .mid .chat p{
     margin: 0;
     height: 73px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 600;
     color: #fff;
     padding: 30px 10px;
+    -webkit-text-stroke: 0.1px black;
     letter-spacing: 0.04em;
     font-family: monospace;
   }

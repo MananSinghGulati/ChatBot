@@ -15,7 +15,7 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     /* border: 1px solid #303030; */
-    box-shadow: 5px 5px 20px #000;
+    box-shadow: 5px 20px 1000px #000;
     border-radius: 20px;
   }
   .top{
@@ -37,7 +37,6 @@ body{
   .mid{
     width: 100%;
     height: 260px;
-    background: #48bfad;
     /* margin-top: -18px; */
   }
   .mid .chat{
@@ -52,28 +51,30 @@ body{
   }
   .mid .chat p{
     margin: 0;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 600;
     color: #fff;
-    background: 	#5086c6;
     padding: 30px 10px;
     letter-spacing: 0.04em;
+    font-family: monospace;
   }
   .input{
     width: 100%;
     height: 85px;
     overflow: hidden;
-    /* background: #090e11; */
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    /* background: #090e11; */            
   }
   .input input{
     width: 100%;
-    height: 100px;
+    height: 87px;
     font-size: 30px;
     outline: none;
     border: none;
-    padding-left: 30px;
-    padding-top: 0;
-    font-family: cursive;
-    background: #000;
+    padding-left: 40px;
+    padding-bottom: 0px;
+    font-family: monospace;
+    background: #444444;
     color: #fff;
   }
